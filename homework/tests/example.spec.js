@@ -1,5 +1,5 @@
 // @ts-check
-const { test, expect } = require('@playwright/test');
+/*const { test, expect } = require('@playwright/test');
 
 const data = [
   'Prototype',
@@ -28,4 +28,4 @@ data.forEach(version => {
       await expect(page.locator('#numberAnswerField')).toHaveValue('5');
     });
   });
-});
+});*/
