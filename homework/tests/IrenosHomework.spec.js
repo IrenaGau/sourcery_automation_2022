@@ -17,8 +17,8 @@ const data = [
   '9'
 ]
 
-
 data.forEach(version => {
+
   test.describe(version + ': Add', () => {
     test('Adding 5 and 7 result is 12', async ({ page }) => {
       //await page.goto('https://testsheepnz.github.io/BasicCalculator');
@@ -54,9 +54,7 @@ data.forEach(version => {
       await expect(page.locator('#numberAnswerField')).toHaveValue('4');
     });
   });
-});
 
-data.forEach(version => {
   test.describe(version + ': Subtract', () => {
     test('Subtracting 7 and 3 result is 4', async ({ page }) => {
       //await page.goto('https://testsheepnz.github.io/BasicCalculator');
@@ -81,9 +79,7 @@ data.forEach(version => {
       await expect(page.locator('#numberAnswerField')).toHaveValue('');
     });
   });
-});
 
-data.forEach(version => {
   test.describe(version + ': Multiply', () => {
     test('Multiplying 3 and 2 result is 6', async ({ page }) => {
       //await page.goto('https://testsheepnz.github.io/BasicCalculator');
@@ -96,9 +92,7 @@ data.forEach(version => {
       await expect(page.locator('#numberAnswerField')).toHaveValue('6');
     });
   });
-});
 
-data.forEach(version => {
   test.describe(version + ': Divide', () => {
     test('Dividing 9 and 2 result is 4.5', async ({ page }) => {
       //await page.goto('https://testsheepnz.github.io/BasicCalculator');
@@ -134,9 +128,7 @@ data.forEach(version => {
       await expect(page.locator('#errorMsgField')).toContainText('Divide by zero error!');
     });
   });
-});
 
-data.forEach(version => {
   test.describe(version + ': Concatenate', () => {
     test('Concatenating 5 and 3 results in 53', async ({ page }) => {
       //await page.goto('https://testsheepnz.github.io/BasicCalculator');
